@@ -1,4 +1,5 @@
 # CTPageControl
 自定义的PageControl 
-[![Platform](https://img.shields.io/cocoapods/p/AFMInfoBanner.svg?style=flat)](http://cocoadocs.org/docsets/AFMInfoBanner)
+<img src="https://github.com/Excalibur-CT/YLComboBox/blob/master/0001.png">
+<img src="https://github.com/Excalibur-CT/YLComboBox/blob/master/0001.png">
 
