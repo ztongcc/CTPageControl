@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypR-YE-lJH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RcS-ia-Z52">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="353"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RcS-ia-Z52"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="RcS-ia-Z52"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLe-Uo-VW6" customClass="CTPageControl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XSB-1P-fDP"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XSB-1P-fDP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XSB-1P-fDP"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oLe-Uo-VW6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CLi-ll-f8K"/>
+                            <constraint firstItem="ypR-YE-lJH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G9L-T3-UGR"/>
+                            <constraint firstAttribute="trailing" secondItem="ypR-YE-lJH" secondAttribute="trailing" id="SbH-TY-gW0"/>
+                            <constraint firstItem="oLe-Uo-VW6" firstAttribute="top" secondItem="ypR-YE-lJH" secondAttribute="bottom" id="hAe-85-ikl"/>
+                            <constraint firstItem="ypR-YE-lJH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="riu-ie-K6k"/>
+                            <constraint firstAttribute="trailing" secondItem="oLe-Uo-VW6" secondAttribute="trailing" id="z9m-xP-E4e"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ypR-YE-lJH"/>
+                                <exclude reference="oLe-Uo-VW6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CLi-ll-f8K"/>
+                                <exclude reference="hAe-85-ikl"/>
+                                <exclude reference="z9m-xP-E4e"/>
+                                <exclude reference="G9L-T3-UGR"/>
+                                <exclude reference="SbH-TY-gW0"/>
+                                <exclude reference="riu-ie-K6k"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ypR-YE-lJH"/>
+                                <include reference="oLe-Uo-VW6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CLi-ll-f8K"/>
+                                <include reference="hAe-85-ikl"/>
+                                <include reference="z9m-xP-E4e"/>
+                                <include reference="G9L-T3-UGR"/>
+                                <include reference="SbH-TY-gW0"/>
+                                <include reference="riu-ie-K6k"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="pageControl" destination="oLe-Uo-VW6" id="cQP-Q5-fMd"/>
+                        <outlet property="scrollView" destination="ypR-YE-lJH" id="qr3-Oc-3Wz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
